@@ -9,5 +9,10 @@ describe('finditemsOver20',function(){
     
         assert.deepEqual(findItemsOver([{name : 'banana', qty : 10},{name : 'pears', qty : 10}], 20), []);
         });
+        it('should return products that are higher than 20 and  products less than 20',function(){
+    
+    
+            assert.deepEqual(findItemsOver([{name : 'banana', qty :[]},{name : 'pears', qty : 10}], 20), []);
+            });
     });
     

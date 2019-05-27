@@ -1,4 +1,4 @@
-describe('most profitable department',function(){
+describe('most profitable department in a day',function(){
     it('should return most profitable department',function(){
     var departments = [
         {'department': 'hardware', 'sales': 4500, 'day': 'Monday'},
@@ -13,12 +13,12 @@ describe('most profitable department',function(){
     
         assert.equal(mostProfitableDepartment('departments'), false,);
         });
-        it('should return the least profitable  department',function(){
+        it('should return another profitable  department',function(){
             var departments = [
-                {'department': 'hardware', 'sales': 4500, 'day': 'Monday'},
-                {'department': 'outdoor', 'sales': 1500, 'day': 'Monday'}
+                {'department': 'outdoor', 'sales': 12006, 'day': 'Friday'},
+                 {'department': 'carpentry', 'sales': 16109, 'day': 'Friday'}
             ]
-            assert.deepEqual(mostProfitableDepartment(departments),'hardware');
+            assert.deepEqual(mostProfitableDepartment(departments),'carpentry');
         });
 });
 
